@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HFSHomePageCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="115" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="115" height="105"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAM-4N-G8A">
+                        <rect key="frame" x="240" y="84" width="42" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="酒店" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abs-bF-xGv">
+                        <rect key="frame" x="0.0" y="64" width="115" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lg7-BS-yaX">
+                        <rect key="frame" x="32" y="16" width="50" height="40"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="pKs-fm-emI"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Lg7-BS-yaX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="6oP-7k-SQQ"/>
+                <constraint firstAttribute="trailing" secondItem="Lg7-BS-yaX" secondAttribute="trailing" constant="33" id="Dja-yJ-9TT"/>
+                <constraint firstItem="abs-bF-xGv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FoO-Dl-DQS"/>
+                <constraint firstItem="Lg7-BS-yaX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="32" id="hQY-Yb-U2U"/>
+                <constraint firstAttribute="bottom" secondItem="abs-bF-xGv" secondAttribute="bottom" constant="20" id="iAC-7o-BH8"/>
+                <constraint firstAttribute="trailing" secondItem="abs-bF-xGv" secondAttribute="trailing" id="sok-HS-Gg6"/>
+            </constraints>
+            <size key="customSize" width="327" height="151"/>
+            <connections>
+                <outlet property="imageName" destination="Lg7-BS-yaX" id="5cx-gP-8WB"/>
+                <outlet property="name" destination="abs-bF-xGv" id="nWb-cf-BSg"/>
+            </connections>
+            <point key="canvasLocation" x="410.5" y="464.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="yxR-G8-rRb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Home Page View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="HSFHomePageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z00-Tr-AfS">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="首页" image="B-home" selectedImage="B-home" id="i6G-0R-pGU"/>
+                                    <tabBarItem title="行程服务" image="B-xcfw" selectedImage="B-xcfw" id="FnP-5x-VAs"/>
+                                    <tabBarItem title="客服" image="B-kf" selectedImage="B-kf" id="YE3-mr-GT9"/>
+                                    <tabBarItem title="公告" image="B-gg" selectedImage="B-gg" id="jDQ-qo-BKn"/>
+                                    <tabBarItem title="我的" image="B-my" selectedImage="B-my" id="jOi-hW-2uP"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xm4-TR-qPL"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="customerServiceItem" destination="YE3-mr-GT9" id="D1G-7l-ksm"/>
+                        <outlet property="homeItem" destination="i6G-0R-pGU" id="i50-H9-Vr4"/>
+                        <outlet property="myItem" destination="jOi-hW-2uP" id="h61-Zj-jDx"/>
+                        <outlet property="notiveItem" destination="jDQ-qo-BKn" id="xHn-oK-74c"/>
+                        <outlet property="serVerItem" destination="FnP-5x-VAs" id="H6Q-KO-gtu"/>
+                        <outlet property="tabBar" destination="z00-Tr-AfS" id="zVW-9x-dwH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1011.5" y="-144.5"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="4Zv-JS-ed4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yxR-G8-rRb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="B-home" selectedImage="B-home" id="nO4-tO-Epb"/>
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GRo-Ph-qlO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="YkY-53-iZy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u5E-Sd-anE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479" y="-145"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="B-gg" width="25" height="20"/>
+        <image name="B-home" width="24" height="21"/>
+        <image name="B-kf" width="20" height="19"/>
+        <image name="B-my" width="25" height="23"/>
+        <image name="B-xcfw" width="21" height="20"/>
+    </resources>
+</document>
